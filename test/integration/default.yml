@@ -1,0 +1,7 @@
+- hosts: localhost
+  roles:
+    - ansible-role-shells
+  vars:
+    shells_to_add:
+      - zsh
+      - bash

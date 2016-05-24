@@ -1,0 +1,6 @@
+---
+
+- name: Restart shells_config
+  service:
+    name: shells
+    state: restarted
