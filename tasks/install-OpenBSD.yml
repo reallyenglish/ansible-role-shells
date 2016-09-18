@@ -1,0 +1,7 @@
+---
+
+- name: Install shells
+  openbsd_pkg:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ shells_to_add }}"
