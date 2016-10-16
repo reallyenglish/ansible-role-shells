@@ -1,0 +1,7 @@
+---
+
+- name: Install shells
+  yum:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ shells_to_add }}"
